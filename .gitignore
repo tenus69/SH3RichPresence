@@ -1,0 +1,16 @@
+# Build output
+bin/
+obj/
+
+# Visual Studio
+.vs/
+
+# VS Code settings
+.vscode/
+
+# User-specific files
+*.user
+*.suo
+
+# Debug symbols
+*.pdb
