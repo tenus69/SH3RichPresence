@@ -50,7 +50,13 @@ internal static class Program
 string locationName = (locationGroup, locationId) switch
 {
     // Main Menu
+    (0, 0) => "Main Menu",
+    (220, 0) => "Main Menu",
     (220, 5) => "Main Menu",
+
+    // Loading In
+    (128, 5) => "Passing Through the Fog...",
+    (128, 15) => "Passing Through the Fog...",
 
     // Central Square Shopping Center
     (128, 8) => "Central Square Shopping Center",
@@ -62,6 +68,23 @@ string locationName = (locationGroup, locationId) switch
     // Hazel Street Subway
     (150, 8)  => "Hazel Street Subway",
     (150, 13) => "Hazel Street Subway",
+
+    // In the Train
+    (90, 15)  => "In the train",
+    (160, 15) => "In the train",
+
+    // Sewers
+    (160, 16) => "Sewers",
+    (160, 17) => "Sewers",
+
+    // Construction Site
+    (170, 18) => "Construction Site",
+
+    // Hilltop Center
+    (160, 19) => "Hilltop Center",
+    (160, 20) => "Hilltop Center",
+    (160, 21) => "Hilltop Center",
+
 
     // Heather's Apartment
     (170, 27) => "Heather's Apartment",
