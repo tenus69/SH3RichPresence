@@ -57,6 +57,11 @@ string locationName = (locationGroup, locationId) switch
     // Loading In
     (128, 5) => "Passing Through the Fog...",
     (128, 15) => "Passing Through the Fog...",
+    (128, 18) => "Passing Through the Fog...",
+    (128, 19) => "Passing Through the Fog...",
+    (128, 20) => "Passing Through the Fog...",
+    (128, 23) => "Passing Through the Fog...",
+    (128, 25) => "Passing Through the Fog...",
 
     // Central Square Shopping Center
     (128, 8) => "Central Square Shopping Center",
@@ -85,16 +90,30 @@ string locationName = (locationGroup, locationId) switch
     (160, 20) => "Hilltop Center",
     (160, 21) => "Hilltop Center",
 
+    // Hilltop Center (Otherworld)
+    (190, 22) => "Hilltop Center (Otherworld)",
+    (190, 23) => "Hilltop Center (Otherworld)",
+    (190, 24) => "Hilltop Center (Otherworld)",
+    (190, 25) => "Hilltop Center (Otherworld)",
 
-    // Heather's Apartment
-    (170, 27) => "Heather's Apartment",
+    // Bergen Street
+    (170, 26) => "Bergen Street",
+
+    // Daisy Villa Apartments
+    (170, 27) => "Daisy Villa Apartments",
 
     // Travel
-    (170, 28) => "Driving to Silent Hill",
-    (170, 29) => "Jack's Inn",
+    (34, 28) => "Driving to Silent Hill",
+
+    // Jack's Inn - Room 106
+    (180, 29) => "Jack's Inn - Room 106",
 
     // Silent Hill
     (160, 30) => "Silent Hill Streets",
+    (180, 31) => "Heaven's Night",
+
+    // Brookhaven Hospital
+    (160, 32) => "Brookhaven Hospital",
 
     // Hilltop Center
     (_, 41) => "Fortune Teller",
