@@ -3,77 +3,62 @@
 <img width="951" height="705" alt="Mod Promo" src="https://github.com/user-attachments/assets/5f83a45c-6816-4fe4-9e60-f220deb510bb" />
 
 
-Bring live Discord Rich Presence to the original PC version of **Silent Hill 3**.
+Discord Rich Presence integration for the original PC version of **Silent Hill 3**.
+
+SH3RichPresence displays live game information on your Discord profile, including Heather's current location and health status.
+
+The **ASI Edition** is now the recommended version. It runs directly inside Silent Hill 3 and does not require a separate application to remain open.
+
+> **Current Version:** SH3RichPresence ASI v0.4.0 Beta
+
+---
 
 ## Features
 
-- 🎮 Automatic game detection
+- 🎮 Runs directly inside Silent Hill 3 as an ASI plugin
 - 📍 Live location tracking
-- ❤️ Heather health status (Fine / Caution / Danger)
-- ⏱️ Session timer
-- 🖼️ Custom Discord assets
+- ❤️ Live Heather health monitoring
+- 🟢 Fine / 🟡 Caution / 🔴 Danger health states
+- 🖼️ Custom Discord Rich Presence assets
+- 🌫️ Loading and transition detection
+- 🔄 Automatically updates Discord while playing
+- 🚫 No separate SH3RichPresence application required
 
-## Installation
+Location detection currently includes areas throughout the game such as:
 
-1. Download the latest release:
-   https://github.com/tenus69/SH3RichPresence/releases/latest
+- Central Square Shopping Center
+- Happy Burger
+- Hazel Street Subway
+- Train
+- Sewers
+- Construction Site
+- Hilltop Center
+- Hilltop Center (Otherworld)
+- Bergen Street
+- Daisy Villa Apartments
+- Silent Hill Streets
+- Heaven's Night
+- Brookhaven Hospital
+- Church areas
+- Additional rooms and transitions
 
-2. Extract `SH3RichPresence.exe`.
+More locations and Discord assets are being added as development continues.
 
-3. Launch Discord.
+---
 
-4. Run `SH3RichPresence.exe`.
+# Installation
 
-5. Start Silent Hill 3.
+## ASI Edition — Recommended
 
-The Rich Presence activates automatically when the game is detected.
+Download the latest **SH3RichPresence ASI** release from the Releases page.
 
-## Current Status
-
-This project is currently in **beta**.
-
-Most locations are working, but some are still being mapped.
-
-If you encounter an **Unknown Location**, please create an Issue and include:
-
-- Location Group
-- Location ID
-
-Example:
-
-```
-Unknown Location (170, 11)
-```
-
-## Planned Features
-
-- Complete location database
-- Boss encounter detection
-- Better room accuracy
-- Enhanced Edition compatibility testing
-- Additional Rich Presence improvements
-
-## Building
-
-Requirements:
-
-- .NET SDK 10 (or newer)
-
-Build:
-
-```powershell
-dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true
-```
-
-Or simply run:
+The release package contains:
 
 ```text
-publish.bat
-```
-
-## Credits
-
-Created by **tenus69**
-
-Silent Hill 3 © Konami
-Discord Rich Presence powered by Discord RPC.
+SH3RichPresence-ASI-v0.4.0-Beta\
+│
+├── discord-rpc.dll
+├── README.txt
+│
+└── scripts\
+    └── SH3RichPresence.asi
