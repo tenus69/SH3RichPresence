@@ -50,7 +50,7 @@ More locations and Discord assets are being added as development continues.
 
 ## ASI Edition — Recommended
 
-Download the latest **SH3RichPresence ASI** release from the Releases page.
+➡️ **[Download SH3RichPresence ASI v0.4.0 Beta](https://github.com/tenus69/SH3RichPresence/releases/tag/v0.4.0-beta)**
 
 The release package contains:
 
