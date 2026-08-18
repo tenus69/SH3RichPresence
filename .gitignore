@@ -14,3 +14,13 @@ obj/
 
 # Debug symbols
 *.pdb
+
+# C++ / ASI build output
+Release/
+Debug/
+x86/
+x64/
+*.obj
+*.ilk
+*.tlog
+*.lastbuildstate
