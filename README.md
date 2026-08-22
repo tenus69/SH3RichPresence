@@ -57,6 +57,7 @@ The release package contains:
 ```text
 SH3RichPresence-ASI-v0.4.0-Beta\
 │
+├── dinput8.dll
 ├── discord-rpc.dll
 ├── README.txt
 │
