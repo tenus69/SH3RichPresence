@@ -8,16 +8,18 @@ const char* GetLocationName(int group, int id)
     // Main Menu
     if ((group == 0 && id == 0) ||
         (group == 220 && id == 0) ||
-        (group == 220 && id == 5))
+        (group == 220 && id == 5 || id == 7))
         return "Main Menu";
 
     // Loading In
     if (
+        (group == 96 && id == 40)
+        ||
         (group == 128 &&
             (id == 5 || id == 15 || id == 18 || id == 19 ||
-                id == 20 || id == 23 || id == 25 || id == 32))
+                id == 20 || id == 23 || id == 25 || id == 32 || id == 36 || id == 37 || id == 38))
         ||
-        (group == 220 && (id == 30 || id == 32))
+        (group == 220 && (id == 30 || id == 32 || id == 37))
         )
     {
         return "Passing Through the Fog...";
@@ -29,7 +31,8 @@ const char* GetLocationName(int group, int id)
         (group == 170 && id == 12))
         return "Central Square Shopping Center";
 
-    if (group == 128 && id == 9)
+    if ((group == 128 && (id == 9)) ||
+        (group == 220 && id == 8))
         return "Happy Burger";
 
     // Hazel Street Subway
@@ -76,14 +79,33 @@ const char* GetLocationName(int group, int id)
 
     // Silent Hill
     if (group == 160 && id == 30)
-        return "Silent Hill Streets";
+        return "Roaming through Silent Hill";
 
     if (group == 180 && id == 31)
         return "Heaven's Night";
 
     // Brookhaven Hospital
-    if (group == 160 && id == 32)
+    if ((group == 160 && (id == 32 || id == 33 || id == 34 || id == 35)) ||
+        (group == 200 && id == 36))
         return "Brookhaven Hospital";
+
+    // Brookhaven Hospital (Otherworld)
+    if ((group == 200 && id == 39) ||
+        (group == 180 && (id == 37 || id == 38 || id == 39)))
+        return "Brookhaven Hospital (Otherworld)";
+
+    // Lakeside Amusement Park
+    if ((group == 220 && id == 40 || id == 41 || id == 42) ||
+        (group == 180 && id == 42))
+        return "Lakeside Amusement Park";
+
+    // Chapel
+    if ((group == 128 && id == 43) ||
+        (group == 190 && id == 44 || id == 45))
+        return "Exploring The Chapel";
+
+    if ((group == 220 && id == 44 || id == 45 || id == 46))
+        return "Chapel (Otherworld)";
 
     return "Unknown Location";
 }
