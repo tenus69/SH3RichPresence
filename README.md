@@ -9,7 +9,7 @@ SH3RichPresence displays live game information on your Discord profile, includin
 
 The **ASI Edition** is now the recommended version. It runs directly inside Silent Hill 3 and does not require a separate application to remain open.
 
-> **Current Version:** SH3RichPresence ASI v0.4.0 Beta
+> **Current Version:** SH3RichPresence ASI v0.5.0 Beta
 
 ---
 
@@ -50,7 +50,7 @@ More locations and Discord assets are being added as development continues.
 
 ## ASI Edition — Recommended
 
-➡️ **[Download SH3RichPresence ASI v0.4.0 Beta](https://github.com/tenus69/SH3RichPresence/releases/tag/v0.4.0-beta)**
+➡️ [Download the Latest SH3RichPresence ASI Release](https://github.com/tenus69/SH3RichPresence/releases/latest)
 
 The release package contains:
 
