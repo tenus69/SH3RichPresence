@@ -3,6 +3,7 @@
 #include <cstdint>
 #include <iomanip>
 #include "discord_rpc.h"
+#include <ctime>
 const char* GetLocationName(int group, int id)
 {
     // Main Menu
@@ -112,6 +113,9 @@ const char* GetLocationName(int group, int id)
 
 constexpr const char* DISCORD_APP_ID = "1533124871838503187";
 
+// Tracks when the game session started
+static int64_t gameStartTimestamp = 0;
+
 void InitializeDiscord()
 {
     DiscordEventHandlers handlers{};
@@ -123,10 +127,13 @@ void InitializeDiscord()
         nullptr
     );
 
+    gameStartTimestamp = static_cast<int64_t>(std::time(nullptr));
+    
     DiscordRichPresence presence{};
 
     presence.details = "SH3RichPresence ASI Test";
     presence.state = "Playing as Heather Mason";
+    presence.startTimestamp = gameStartTimestamp;
 
     Discord_UpdatePresence(&presence);
 }
@@ -175,6 +182,9 @@ void UpdateDiscordPresence(const char* locationName, float currentHealth)
         presence.smallImageKey = healthImage;
         presence.smallImageText = healthText;
     }
+
+    // Keep the timer running across location and health changes
+    presence.startTimestamp = gameStartTimestamp;
 
     Discord_UpdatePresence(&presence);
 }
